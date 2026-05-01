@@ -10,21 +10,24 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: geeksville
       url-base: https://github.com/geeksville
-  # - name: prospector
-  #  url-base: https://github.com/t-ogura
+    - name: prospector
+      url-base: https://github.com/t-ogura
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
+    #- name: cirque-input-module
+    #  remote: petejohanson
+    #  revision: main
     - name: cirque-input-module
       remote: geeksville
       revision: toucan
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: v0.3
-  # - name: prospector-zmk-module
-  #   remote: prospector
-  #   revision: v2.2.0
-  #   path: modules/prospector-zmk-module
+    - name: prospector-zmk-module
+      remote: prospector
+      revision: v2.2.0
+      path: modules/prospector-zmk-module
   self:
     path: config
