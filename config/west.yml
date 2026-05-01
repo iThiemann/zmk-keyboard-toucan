@@ -16,6 +16,7 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
+      revision: main
     #- name: cirque-input-module
     #  remote: petejohanson
     #  revision: main
@@ -27,7 +28,7 @@ manifest:
       revision: v0.3
     - name: prospector-zmk-module
       remote: prospector
-      revision: v2.2.0
+      revision: v2.0.0
       path: modules/prospector-zmk-module
   self:
     path: config
